@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { Progress } from '../ui/progress';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { LogoutButton } from '../auth/LogoutButton';
 import { 
   TrendingUp, 
   TrendingDown, 
@@ -120,6 +121,7 @@ export function VendorDashboard({ user }: VendorDashboardProps) {
             <Download className="h-4 w-4 mr-2" />
             Exportar
           </Button>
+          <LogoutButton variant="outline" size="sm" />
         </div>
       </div>
 

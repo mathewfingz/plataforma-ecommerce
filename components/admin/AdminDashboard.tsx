@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { Progress } from '../ui/progress';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { LogoutButton } from '../auth/LogoutButton';
 import { 
   Users, 
   ShoppingBag, 
@@ -151,6 +152,7 @@ export function AdminDashboard({ user }: AdminDashboardProps) {
             <Settings className="h-4 w-4 mr-2" />
             Configuración
           </Button>
+          <LogoutButton variant="outline" size="sm" />
         </div>
       </div>
 
